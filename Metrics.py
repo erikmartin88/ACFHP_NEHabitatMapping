@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # Name:        ACFHP Northeast Diadromous Fish Prioritization Metrics
-# Purpose:     Script to generate metrics to prioritize river reaches in the Northeast
+# Purpose:     Script to generate metrics to prioritize river reaches & estuarine hexagons in the Northeast
 #              U.S. for diadromous fish restoration activities funded by the
 #              Atlantic Coast Fish Habitat Partnership
 # Author:      Erik Martin, emartin@tnc.org

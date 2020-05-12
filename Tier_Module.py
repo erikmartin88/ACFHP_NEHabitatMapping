@@ -1,6 +1,4 @@
 ######################################################################
-## Chesapeake Fish Passage Prioritization
-## dam prioritization scripts
 ## Erik Martin, The Nature Conservancy, emartin@tnc.org, May 2013
 ##
 ## Script to tier dams into 5% bins based on FinalRank

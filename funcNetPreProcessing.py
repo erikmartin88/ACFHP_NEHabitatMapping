@@ -1,3 +1,12 @@
+#-------------------------------------------------------------------------------
+# Name:        Pre=process data for functional river network development
+#
+# Author:      Erik Martin, emartin@tnc.org
+#
+# Created:     05/04/2017
+# Copyright:   (c) emartin 2017
+#-------------------------------------------------------------------------------
+
 import sys, os, arcpy, myGlobals as mg
 import collections
 import functionalNetworks as FN

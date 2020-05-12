@@ -7,6 +7,8 @@
 
     :copyright: (c) 2012-2013 by Heungsub Lee
     :license: BSD, see LICENSE for more details.
+
+    See https://github.com/sublee/ranking/blob/master/ranking.py
 """
 import itertools
 

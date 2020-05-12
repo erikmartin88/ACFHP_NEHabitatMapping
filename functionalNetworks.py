@@ -1,22 +1,19 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
+# Name:        Module to develop functional river networks
+# Purpose:      Develop functional river networks given a river hydrography and in-stream barriers
 #
-# Author:      emartin
+# Author:      emartin@tnc.org
 #
 # Created:     05/04/2017
 # Copyright:   (c) emartin 2017
-# Licence:     <your licence>
 #-------------------------------------------------------------------------------
 import arcpy, time, sys, os, myGlobals
 import HR_DOR as hydroRout
 import prepStreams as PS
 
-
 from time import strftime
 dateStamp= strftime("%Y%m%d_%I%M%S")
 root = os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), os.pardir))
-
 
 myWorkspace = myGlobals.myWorkspace
 sourceStreams = myGlobals.streamCATFlowlines

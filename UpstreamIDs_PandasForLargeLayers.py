@@ -2,11 +2,10 @@
 # Name:        Get Upstream IDs.  Uses Pandas python package
 #               For large layers (millions of records) run in 64-bit python
 #
-# Author:      emartin
+# Author:      emartin@tnc.org
 #
 # Created:     13/02/2017
 # Copyright:   (c) emartin 2017
-# Licence:     <your licence>
 #-------------------------------------------------------------------------------
 import arcpy
 import pandas as pd
