@@ -1,2 +1,6 @@
 # ACFHP_NEHabitatMapping
+
+Building on the Southeast Habitat Protection Mapping Project (Hoenke et al 2019), The Nature Conservancy, working closely with the Atlantic Coast Fish Habitat Partnership’s (ACFHP) Science and Data Committee, has recently completed this Northeast Habitat Protection Mapping Project.  The intent of this analysis is to provide quantitative information to help guide the conservation community’s conservation actions around both diadromous fish and estuarine habitats. Habitat prioritization is a key element in ACFHP’s Conservation Strategic Plan. Additionally, habitat prioritization is needed for ACFHP to objectively evaluate on-the-ground restoration project proposals. Results will help ACFHP, its partners, and various stakeholders better identify locations in need of habitat conservation – both ‘pristine’ sites that could benefit from protection activities, and minimally to moderately degraded habitat that could benefit from restoration. It is not intended to be used as guidance for regulatory purposes (see ‘Discussion and Caveats’ section of the project report more details).
+
+The "Metrics.py" file is the main file to generate the metrics.  Data paths and global variables are set in myGlobals.py.  
  
