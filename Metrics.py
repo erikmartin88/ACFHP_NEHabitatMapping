@@ -26,24 +26,24 @@ arcpy.env.overwriteOutput = True
 def main():
     try:
         logger.info("Starting metric calculations...")
-        # regions = ("North_Atlantic",  "Mid_Atlantic")
-        # for region in regions:
-        #     logger.info("Pulling out regions to run separately...")
-        #     catchments = os.path.join(mg.metricsGDBFullPath, "catchments_{}".format(region))
-        #     hexagons = os.path.join(mg.metricsGDBFullPath, "hexagons_{}".format(region))
-        #     if arcpy.Exists(catchments) == False:
-        #         print("making catchments")
-        #         arcpy.Select_analysis(mg.streamCATCatchments, catchments, "Region = '{}'".format(region))
-        #     else:
-        #         print("updating existing catchment layer")
-        #     if arcpy.Exists(hexagons) == False:
-        #         print("making hexagons")
-        #         arcpy.Select_analysis(mg.hexagons, hexagons, "Region = '{}'".format(region))
-        #     else:
-        #         print("updating existing hexagon layer")
-        #
-        #     # diadromous(catchments, region)
-        #     estuarine(hexagons, region)
+        regions = ("North_Atlantic",  "Mid_Atlantic")
+        for region in regions:
+            logger.info("Pulling out regions to run separately...")
+            catchments = os.path.join(mg.metricsGDBFullPath, "catchments_{}".format(region))
+            hexagons = os.path.join(mg.metricsGDBFullPath, "hexagons_{}".format(region))
+            if arcpy.Exists(catchments) == False:
+                print("making catchments")
+                arcpy.Select_analysis(mg.streamCATCatchments, catchments, "Region = '{}'".format(region))
+            else:
+                print("updating existing catchment layer")
+            if arcpy.Exists(hexagons) == False:
+                print("making hexagons")
+                arcpy.Select_analysis(mg.hexagons, hexagons, "Region = '{}'".format(region))
+            else:
+                print("updating existing hexagon layer")
+
+            diadromous(catchments, region)
+            estuarine(hexagons, region)
 
         #make merged mid-atlantic / north atlantic dataset
         logger.info("Making merged layers...")
